@@ -146,8 +146,14 @@ header {
     left: 0;
     width: 100%;
     z-index: 8999;
-    background: rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+       -moz-transition: all 0.4s ease;
+         -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
 }
+header.active {background: rgba(255,255,255,0.8); color:#000 }
 
 .menu {
     padding-left: 4vw;
@@ -163,10 +169,10 @@ header {
 .menu::after {
     clear: both;
 }
-
+header .menu a.menu-name, header .menu .menu-sections ul li a  {  color: #fff;}
+header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  color: #000;}
 .menu a.menu-name {
     float: left;
-    color: #000;
     font-family: 'Karla', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
@@ -188,7 +194,6 @@ header {
 
 .menu .menu-sections ul li a {
     display: inline-block;
-    color: #000;
     font-family: 'Karla', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
@@ -209,7 +214,7 @@ header {
 }
 
 .menu .menu-sections ul li a:hover {
-    border-color: #3498db;
+    border-color: #FFFF00;
 }
 
 @media (max-width: 779px) {
@@ -316,32 +321,39 @@ p {
     }
 }
 
+section {
+  padding-top: 250px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
 /* ==========================================================================
    Home
    ========================================================================== */
 
 #home {
     position: relative;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    background-color: #000;
 }
-
+#home h1 {
+  color: #fff;
+}
 /* ==========================================================================
    About
    ========================================================================== */
-
-#about {
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-bottom: 300px;
-}
 
 #about h2 {
     margin-bottom: 30px;
 }
 
 .about-content {
-    width: 33vw;
+    width: 50vw;
+    display: inline-block;
+}
+.img-circle {
+    border-radius: 50%;
+    float: right;
+    width:30%;
 }
 
 @media (max-width: 1280px) {
@@ -351,25 +363,23 @@ p {
 }
 
 @media (max-width: 779px) {
-    .about-content {
+    .about-content, .img-circle {
         width: 100%;
+        display: block;
+        float: none;
     }
 }
 
 @media (max-width: 459px) {
-    .about-content {
+    .about-content, .img-circle {
         width: 100%;
     }
 }
 
 @media (max-width: 319px) {
-    .about-content {
+    .about-content, .img-circle {
         width: 100%;
     }
-} 
-
-.img-circle {
-    border-radius: 50%;
 }
 
 /* ==========================================================================
@@ -648,7 +658,6 @@ figcaption.visually-showed {
    ========================================================================== */
 
 #services {
-    padding: 300px 4vw 0 4vw;
     margin: 0 auto;
 }
 
@@ -659,7 +668,7 @@ figcaption.visually-showed {
 }
 
 .services-content ul li {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     color: #999;
 }
@@ -705,10 +714,6 @@ figcaption.visually-showed {
    Contact
    ========================================================================== */
 
-#contact {
-    padding: 300px 4vw 100px 4vw;
-}
-
 #contact h1 {
     -webkit-transition: color 0.4s ease;
        -moz-transition: color 0.4s ease;
@@ -721,7 +726,7 @@ figcaption.visually-showed {
 }
 
 .contact-content {
-    width: 33vw;
+    width: 100vw;
 }
 
 #contact a {
@@ -740,8 +745,8 @@ figcaption.visually-showed {
 }
 
 
-.email-color { color: #db4437; } 
-.twitter-color { color: #55acee; } 
+.email-color { color: #db4437; }
+.twitter-color { color: #55acee; }
 .instagram-color { color: #9b6954; }
 .dribbble-color { color: #ea4c89; }
 .github-color { color: #000; }
@@ -757,8 +762,8 @@ figcaption.visually-showed {
             transition: color 0.4s ease;
 }
 
-#contact a.email:hover { color: #db4437; } 
-#contact a.twitter:hover { color: #55acee; } 
+#contact a.email:hover { color: #db4437; }
+#contact a.twitter:hover { color: #55acee; }
 #contact a.instagram:hover { color: #9b6954; }
 #contact a.dribbble:hover { color: #ea4c89; }
 #contact a.github:hover { color: #000; }
@@ -769,33 +774,7 @@ figcaption.visually-showed {
     margin: 40px 0 30px 0;
 }
 
-@media (max-width: 1280px) {
-    .contact-content {
-        width: 75vw;
-    }
-}
-
-@media (max-width: 779px) {
-    .contact-content {
-        width: 100%;
-    }
-}
-
 @media (max-width: 459px) {
-    .contact-content {
-        width: 100%;
-    }
-
-    #contact a {
-        display: block;
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 319px) {
-    .contact-content {
-        width: 100%;
-    }
 
     #contact a {
         display: block;
@@ -809,7 +788,7 @@ figcaption.visually-showed {
 
 #footer {
     background: #f4f4f4;
-    padding: 100px 0 50px 0;
+    padding: 40px 0;
     text-align: center;
 }
 

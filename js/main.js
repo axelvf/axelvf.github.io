@@ -23,6 +23,17 @@ $(document).ready(function() {
 	    });
 	});
 
+// safe reference. We dont want this the be done every scrolled pixel!
+// (Courtesy: Martijn :  http://stackoverflow.com/users/2519416/martijn)
+$(window).on("scroll", function() {
+        if($(window).scrollTop() > 650) {
+            $("header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $("header").removeClass("active");
+        }
+    });
+
 	// Works "hover" effect
 	$('.work-item').bind('mouseenter mouseleave', function() {
 		$(this).children('.work-item-content').toggleClass('visually-showed');
@@ -47,12 +58,12 @@ $(document).ready(function() {
 		} else if ($(this).hasClass('github')) {
 			$('#contact').find('h1').toggleClass('github-color');
 		} else if ($(this).hasClass('linkedin')) {
-			$('#contact').find('h1').toggleClass('linkedin-color');	
+			$('#contact').find('h1').toggleClass('linkedin-color');
 		};
 	});
 
 	// Scroll reveal
-	var config = { 
+	var config = {
 		mobile: false
 	}
 
@@ -73,14 +84,6 @@ function fixSizes() {
 
 	$('#home').css('height', windowHeight);
 	$('#home h1').each(function() {
-		$(this).css('padding-top', ($(this).parent().height() - $(this).height()) / 2);
+		$(this).css('padding-bottom', ($(this).parent().height() - $(this).height()) / 2);
 	});
 };
-
-
-
-
-
-
-
-
