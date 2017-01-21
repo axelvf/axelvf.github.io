@@ -174,7 +174,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
 .menu a.menu-name {
     float: left;
     font-family: 'Karla', sans-serif;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -195,7 +195,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
 .menu .menu-sections ul li a {
     display: inline-block;
     font-family: 'Karla', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -524,12 +524,12 @@ figcaption.visually-showed {
 }
 
 .portfolio-menu::before,
-.portfolio-menu::after {
+.portfolio-menu::after, #about:after {
     content: "";
     display: table;
 }
 
-.portfolio-menu::after {
+.portfolio-menu::after, #about:after  {
     clear: both;
 }
 
