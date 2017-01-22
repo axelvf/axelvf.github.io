@@ -326,7 +326,17 @@ section {
   padding-left: 4vw;
   padding-right: 4vw;
 }
+@media (max-width: 459px) {
+    section {
+        padding-top: 120px;
+    }
+}
 
+@media (max-width: 319px) {
+    section {
+        padding-top: 120px;
+    }
+}
 /* ==========================================================================
    Home
    ========================================================================== */
@@ -695,18 +705,6 @@ figcaption.visually-showed {
 @media (max-width: 779px) {
     .services-content {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 459px) {
-    #services {
-        display: none;
-    }
-}
-
-@media (max-width: 319px) {
-    #services {
-        display: none;
     }
 }
 
