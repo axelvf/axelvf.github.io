@@ -32,16 +32,6 @@ body {
         box-sizing: border-box;
 }
 
-::-moz-selection {
-    background: #FFFF00;
-    color: #222;
-}
-
-::selection {
-    background: #FFFF00;
-    color: #222;
-}
-
 img {
     vertical-align: middle;
 }
@@ -146,7 +136,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 8999;
-    background: rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0)
     color: #fff;
     -webkit-transition: all 0.4s ease;
        -moz-transition: all 0.4s ease;
@@ -347,10 +337,36 @@ section {
 }
 #home h1 {
   color: #fff;
+  position: fixed;
+  z-index: 1;
+}
+.fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fade-in.show {
+    position: relative;
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+    transform: translateY(-60px);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
 }
 /* ==========================================================================
    About
    ========================================================================== */
+#about, #services, #contact {position: relative; z-index: 20;}
 
 #about h2 {
     margin-bottom: 30px;

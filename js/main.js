@@ -32,6 +32,12 @@ $(window).on("scroll", function() {
             //remove the background property so it comes transparent again (defined in your css)
            $("header").removeClass("active");
         }
+				if($(window).scrollTop() > 150) {
+						$("#home h1").addClass("show");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+					 $("#home h1").removeClass("show");
+        }
     });
 
 	// Works "hover" effect
