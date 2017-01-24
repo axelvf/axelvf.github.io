@@ -315,6 +315,7 @@ section {
   padding-top: 250px;
   padding-left: 4vw;
   padding-right: 4vw;
+  overflow-x: hidden;
 }
 @media (max-width: 459px) {
     section {
