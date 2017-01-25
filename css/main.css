@@ -210,6 +210,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
 @media (max-width: 779px) {
     .menu a.menu-name {
         font-size: 1.2rem;
+        margin: 20px 0 0 0;
     }
     .menu .menu-sections {
         display: none;
@@ -219,6 +220,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
 @media (max-width: 459px) {
     .menu a.menu-name {
         font-size: 1rem;
+        margin: 20px 0 0 0;
     }
     .menu .menu-sections {
         display: none;
@@ -228,6 +230,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
 @media (max-width: 319px) {
     .menu a.menu-name {
         font-size: 1rem;
+        margin: 20px 0 0 0;
     }
     .menu .menu-sections {
         display: none;
