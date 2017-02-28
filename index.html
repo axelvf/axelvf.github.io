@@ -110,6 +110,20 @@
 
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
+
+        <!-- Google Analytics and Autotrack -->
+        <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-35369290-1', 'auto');
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'urlChangeTracker');
+        ga('require', 'maxScrollTracker');
+        ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <script async src='js/autotrack.js'></script>
+        <!-- End Google Analytics and Autotrack-->
     </head>
     <body>
 
@@ -204,19 +218,6 @@
         <script src="js/scrollReveal.min.js"></script>
         <script src="js/remodal.min.js"></script>
         <script src="js/main.js"></script>
-        
-        <!-- Google Analytics and Autotrack -->
-        <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-35369290-1', 'auto');
-        ga('require', 'eventTracker');
-        ga('require', 'outboundLinkTracker');
-        ga('require', 'urlChangeTracker');
-        ga('require', 'maxScrollTracker');
-        ga('send', 'pageview');
-        </script>
-        <script async src='https://www.google-analytics.com/analytics.js'></script>
-        <script async src='js/autotrack.js'></script>
-        <!-- End Google Analytics and Autotrack-->
+
     </body>
 </html>
