@@ -1,95 +1,102 @@
 $(document).ready(function() {
-	'use strict';
+    'use strict';
 
-	fixSizes();
+    fixSizes();
 
-	// Loader
-	$('.loader-content').delay(2000).fadeToggle('slow');
-	$('.loader').delay(2500).fadeOut('slow', function() {
-		$('body').css('overflow', 'auto');
-	});
+    // Loader
+    $('.loader-content').delay(2000).fadeToggle('slow');
+    $('.loader').delay(2500).fadeOut('slow', function() {
+        $('body').css('overflow', 'auto');
+    });
 
-	// Hash links
-	$('a[href^="#"]').on('click',function(e) {
-	    e.preventDefault();
+    // write message in c0nsol3 :)
+	console.log("mysite@axelvf:~$");
+	console.log("mysite@axelvf:~$");
+	console.log("mysite@axelvf:~$");
+	console.log("mysite@axelvf:~$ What are you doing here?");
+	console.log("mysite@axelvf:~$");
 
-	    var target = this.hash;
-	    var $target = $(target);
+    // Hash links
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top - 0
-	    }, 400, 'swing', function() {
-	        window.location.hash = target;
-	    });
-	});
+        var target = this.hash;
+        var $target = $(target);
 
-// safe reference. We dont want this the be done every scrolled pixel!
-// (Courtesy: Martijn :  http://stackoverflow.com/users/2519416/martijn)
-$(window).on("scroll", function() {
-        if($(window).scrollTop() > 600) {
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 0
+        }, 400, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+
+    // safe reference. We dont want this the be done every scrolled pixel!
+    // (Courtesy: Martijn :  http://stackoverflow.com/users/2519416/martijn)
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 600) {
             $("header").addClass("active");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $("header").removeClass("active");
+            $("header").removeClass("active");
         }
-				if($(window).scrollTop() > 150) {
-						$("#home h1").addClass("show");
+        if ($(window).scrollTop() > 150) {
+            $("#home h1").addClass("show");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-					 $("#home h1").removeClass("show");
+            $("#home h1").removeClass("show");
         }
     });
 
-	// Works "hover" effect
-	$('.work-item').bind('mouseenter mouseleave', function() {
-		$(this).children('.work-item-content').toggleClass('visually-showed');
-	});
+    // Works "hover" effect
+    $('.work-item').bind('mouseenter mouseleave', function() {
+        $(this).children('.work-item-content').toggleClass('visually-showed');
+    });
 
-	// Remodal events
-	$(document).on('opening', '.remodal', function() {});
-	$(document).on('opened', '.remodal', function() {});
-	$(document).on('closing', '.remodal', function() {});
-	$(document).on('closed', '.remodal', function() {});
+    // Remodal events
+    $(document).on('opening', '.remodal', function() {});
+    $(document).on('opened', '.remodal', function() {});
+    $(document).on('closing', '.remodal', function() {});
+    $(document).on('closed', '.remodal', function() {});
 
-	//Get in touch effects
-	$('#contact a').on('mouseenter mouseleave', function() {
-		if ($(this).hasClass('email')) {
-			$('#contact').find('h1').toggleClass('email-color');
-		} else if ($(this).hasClass('twitter')) {
-			$('#contact').find('h1').toggleClass('twitter-color');
-		} else if ($(this).hasClass('instagram')) {
-			$('#contact').find('h1').toggleClass('instagram-color');
-		} else if ($(this).hasClass('dribbble')) {
-			$('#contact').find('h1').toggleClass('dribbble-color');
-		} else if ($(this).hasClass('github')) {
-			$('#contact').find('h1').toggleClass('github-color');
-		} else if ($(this).hasClass('linkedin')) {
-			$('#contact').find('h1').toggleClass('linkedin-color');
-		};
-	});
+    //Get in touch effects
+    $('#contact a').on('mouseenter mouseleave', function() {
+        if ($(this).hasClass('email')) {
+            $('#contact').find('h1').toggleClass('email-color');
+        } else if ($(this).hasClass('twitter')) {
+            $('#contact').find('h1').toggleClass('twitter-color');
+        } else if ($(this).hasClass('instagram')) {
+            $('#contact').find('h1').toggleClass('instagram-color');
+        } else if ($(this).hasClass('dribbble')) {
+            $('#contact').find('h1').toggleClass('dribbble-color');
+        } else if ($(this).hasClass('github')) {
+            $('#contact').find('h1').toggleClass('github-color');
+        } else if ($(this).hasClass('linkedin')) {
+            $('#contact').find('h1').toggleClass('linkedin-color');
+        };
+    });
 
-	// Scroll reveal
-	var config = {
-		mobile: false
-	}
+    // Scroll reveal
+    var config = {
+        mobile: false
+    }
 
-	window.sr = new scrollReveal(config);
+    window.sr = new scrollReveal(config);
 
 });
 
 $(window).resize(function() {
-	'use strict'
+    'use strict'
 
-	fixSizes();
+    fixSizes();
 });
 
 function fixSizes() {
-	// Home position
-	var windowHeight = $(window).height();
-	var windowWidth = $(window).width();
+    // Home position
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
 
-	$('#home').css('height', windowHeight);
-	$('#home h1').each(function() {
-		$(this).css('padding-bottom', ($(this).parent().height() - $(this).height()) / 2);
-	});
+    $('#home').css('height', windowHeight);
+    $('#home h1').each(function() {
+        $(this).css('padding-bottom', ($(this).parent().height() - $(this).height()) / 2);
+    });
 };
