@@ -1,3 +1,5 @@
+[![SSL Rating](https://sslbadge.org/?domain=axelvf.com.ar)](https://www.ssllabs.com/ssltest/analyze.html?d=axelvf.com.ar) [![CloudFlare](https://www.cloudflare.com/media/images/web-badges/cf-web-badges-f-1.png)](https://cloudflare.com) 
+
 # :rocket: axelvf.com.ar
 
 * My personal site is hosted through [GitHub Pages](https://pages.github.com).
