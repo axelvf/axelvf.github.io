@@ -370,7 +370,7 @@ section {
 /* ==========================================================================
    About
    ========================================================================== */
-#about, #services, #contact {position: relative; z-index: 20;}
+#about, #skills, #contact {position: relative; z-index: 20;}
 
 #about h2 {
     margin-bottom: 30px;
@@ -684,26 +684,26 @@ figcaption.visually-showed {
 }
 
 /* ==========================================================================
-   Services
+   Skills
    ========================================================================== */
 
-#services {
+#skills {
     margin: 0 auto;
 }
 
-.services-content {
+.skills-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.services-content ul li {
+.skills-content ul li {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #999;
 }
 
-.services-content ul li:first-child {
+.skills-content ul li:first-child {
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -713,17 +713,17 @@ figcaption.visually-showed {
 }
 
 @media (max-width: 1280px) {
-    .services-content > div {
+    .skills-content > div {
         margin-bottom: 60px;
     }
 
-    .services-content > div:last-child {
+    .skills-content > div:last-child {
         margin-bottom: 0;
     }
 }
 
 @media (max-width: 779px) {
-    .services-content {
+    .skills-content {
         flex-direction: column;
     }
 }
