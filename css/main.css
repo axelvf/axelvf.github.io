@@ -372,7 +372,7 @@ section {
 }
 /*GLITCH*/
 
-@media (min-width: 779px) and (max-width: 1280px) {
+@media (min-width: 779px) and (max-width: 3000px) {
 .glitch-txt {
     position: relative;
 }
