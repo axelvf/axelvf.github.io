@@ -203,7 +203,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
 }
 
 .menu .menu-sections ul li a:hover {
-    border-color: #FFFF00;
+    border-color: black;
 }
 
 @media (max-width: 779px) {
@@ -372,6 +372,7 @@ section {
 }
 /*GLITCH*/
 
+@media (min-width: 779px) and (max-width: 1280px) {
 .glitch-txt {
     position: relative;
 }
@@ -571,7 +572,7 @@ section {
     clip: rect(0, 0, 0, 0);
     animation: noise-anim-2 3s linear infinite alternate-reverse;
 }
-
+}
 /* ==========================================================================
    About
    ========================================================================== */
