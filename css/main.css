@@ -143,7 +143,7 @@ header {
          -o-transition: all 0.4s ease;
             transition: all 0.4s ease;
 }
-header.active {background: rgba(255,255,255,0.8); color:#000 }
+header.active {background: rgba(255,255,255,0); color:#000 }
 
 .menu {
     padding-left: 4vw;
@@ -168,8 +168,7 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin: 55px 0 0 0;
-    padding: 25px 0 18px 0;
+    margin: 70px 0 0 0;
     border-bottom: 3px solid transparent;
 }
 
@@ -315,20 +314,23 @@ p {
 }
 
 section {
-  padding-top: 250px;
+  padding-top: 125px;
+  padding-bottom: 125px;
   padding-left: 4vw;
   padding-right: 4vw;
   overflow-x: hidden;
 }
 @media (max-width: 459px) {
     section {
-        padding-top: 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
 @media (max-width: 319px) {
     section {
-        padding-top: 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 /* ==========================================================================
@@ -343,6 +345,7 @@ section {
   color: #fff;
   position: fixed;
   z-index: 1;
+  padding-top: 125px;
 }
 .fade-in {
     opacity: 1;
@@ -367,10 +370,212 @@ section {
     -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
+/*GLITCH*/
+
+.glitch-txt {
+    position: relative;
+}
+
+@keyframes noise-anim {
+    0% {
+        clip: rect(19px, 9999px, 30px, 0);
+    }
+
+    5% {
+        clip: rect(44px, 9999px, 30px, 0);
+    }
+
+    10% {
+        clip: rect(8px, 9999px, 24px, 0);
+    }
+
+    15% {
+        clip: rect(61px, 9999px, 91px, 0);
+    }
+
+    20% {
+        clip: rect(18px, 9999px, 39px, 0);
+    }
+
+    25% {
+        clip: rect(81px, 9999px, 100px, 0);
+    }
+
+    30% {
+        clip: rect(92px, 9999px, 23px, 0);
+    }
+
+    35% {
+        clip: rect(6px, 9999px, 62px, 0);
+    }
+
+    40% {
+        clip: rect(9px, 9999px, 75px, 0);
+    }
+
+    45% {
+        clip: rect(16px, 9999px, 38px, 0);
+    }
+
+    50% {
+        clip: rect(52px, 9999px, 92px, 0);
+    }
+
+    55% {
+        clip: rect(64px, 9999px, 38px, 0);
+    }
+
+    60% {
+        clip: rect(79px, 9999px, 68px, 0);
+    }
+
+    65% {
+        clip: rect(80, 9999px, 67px, 0);
+    }
+
+    70% {
+        clip: rect(42px, 9999px, 63px, 0);
+    }
+
+    75% {
+        clip: rect(77px, 9999px, 79px, 0);
+    }
+
+    80% {
+        clip: rect(91px, 9999px, 48px, 0);
+    }
+
+    85% {
+        clip: rect(65px, 9999px, 54px, 0);
+    }
+
+    90% {
+        clip: rect(85px, 9999px, 17px, 0);
+    }
+
+    95% {
+        clip: rect(33px, 9999px, 81px, 0);
+    }
+
+    100% {
+        clip: rect(36px, 9999px, 22px, 0);
+    }
+}
+
+.glitch-txt::after {
+    content: attr(data-text);
+    position: absolute;
+    text-shadow: -1px 0 #000;
+    left: 1px;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    clip: rect(0, 900, 0, 0);
+    animation: noise-anim 2s linear infinite alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+    0% {
+        clip: rect(40, 9999px, 35px, 0);
+    }
+
+    5% {
+        clip: rect(11px, 9999px, 5px, 0);
+    }
+
+    10% {
+        clip: rect(63px, 9999px, 14px, 0);
+    }
+
+    15% {
+        clip: rect(60, 9999px, 8px, 0);
+    }
+
+    20% {
+        clip: rect(79px, 9999px, 68px, 0);
+    }
+
+    25% {
+        clip: rect(4px, 9999px, 52px, 0);
+    }
+
+    30% {
+        clip: rect(3px, 9999px, 37px, 0);
+    }
+
+    35% {
+        clip: rect(14px, 9999px, 29px, 0);
+    }
+
+    40% {
+        clip: rect(87px, 9999px, 89px, 0);
+    }
+
+    45% {
+        clip: rect(13px, 9999px, 37px, 0);
+    }
+
+    50% {
+        clip: rect(96px, 9999px, 74px, 0);
+    }
+
+    55% {
+        clip: rect(50, 9999px, 4px, 0);
+    }
+
+    60% {
+        clip: rect(32px, 9999px, 4px, 0);
+    }
+
+    65% {
+        clip: rect(33px, 9999px, 52px, 0);
+    }
+
+    70% {
+        clip: rect(68px, 9999px, 25px, 0);
+    }
+
+    75% {
+        clip: rect(44px, 9999px, 83px, 0);
+    }
+
+    80% {
+        clip: rect(88px, 9999px, 32px, 0);
+    }
+
+    85% {
+        clip: rect(81px, 9999px, 38px, 0);
+    }
+
+    90% {
+        clip: rect(48px, 9999px, 39px, 0);
+    }
+
+    95% {
+        clip: rect(19px, 9999px, 94px, 0);
+    }
+
+    100% {
+        clip: rect(48px, 9999px, 30px, 0);
+    }
+}
+
+.glitch-txt::before {
+    content: attr(data-text);
+    position: absolute;
+    text-shadow: 1px 0 #000;
+    left: -1px;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    animation: noise-anim-2 3s linear infinite alternate-reverse;
+}
+
 /* ==========================================================================
    About
    ========================================================================== */
-#about, #skills, #contact {position: relative; z-index: 20;}
+#about, #skills, #contact, #flow {position: relative; z-index: 20;}
 
 #about h2 {
     margin-bottom: 30px;
@@ -380,6 +585,7 @@ section {
     width: 50vw;
     display: inline-block;
 }
+
 .img-circle {
     border-radius: 50%;
     float: right;
@@ -397,6 +603,7 @@ section {
         width: 100%;
         display: block;
         float: none;
+        margin-bottom: 50px;
     }
 }
 
@@ -411,7 +618,84 @@ section {
         width: 100%;
     }
 }
+/* ==========================================================================
+   FLOW
+   ========================================================================== */
 
+#flow {
+    background: black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(../img/about/flow.png);
+    background-position: 90% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media (max-width: 1280px) {
+    #flow {
+        background-position: 120% -150px;
+    }
+}
+@media (max-width: 1030px) {
+    #flow {
+        background-position: 170% -150px;
+    }
+}
+#flow p {
+    color: white;
+}
+
+#flow p.note {
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+#flow h2 {
+    color: #57dfb7;
+    font-weight: 300;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 30px;
+}
+
+.flow-content {
+    width: 45vw;
+    display: inline-block;
+}
+.flow-content ul {
+    margin: 50px 0 0;
+}
+.flow-content ul li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 1px white;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    -webkit-transition: all 0.4s ease;
+       -moz-transition: all 0.4s ease;
+         -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+}
+.flow-content ul li img {
+    max-height: 35px;
+}
+.flow-content ul li:hover  {
+    background-color: #57dfb7;
+    border: solid 1px #57dfb7;
+}
+
+@media (max-width: 960px) {
+    .flow-content {
+        width: 100%;
+        display: block;
+    }
+    #flow {
+        background-image:none;
+    }
+}
 /* ==========================================================================
    Works
    ========================================================================== */
@@ -483,7 +767,6 @@ figcaption.visually-showed {
     visibility: visible;
 }
 
-@media (max-width: 1280px) {}
 
 @media (max-width: 779px) {
     .work-content {
