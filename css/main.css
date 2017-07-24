@@ -20,7 +20,6 @@ body {
     font-family: 'Karla', sans-serif;
     color: #646473;
     height: 100vh;
-
     overflow: hidden;
 }
 
@@ -42,6 +41,10 @@ a:hover,
 a:active {
     text-decoration: none;
     outline: none;
+}
+
+:focus {
+    outline: 0;
 }
 
 ol,
@@ -132,6 +135,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 header {
     position: fixed;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 70px;
     top: 0;
     left: 0;
     width: 100%;
@@ -143,44 +149,26 @@ header {
          -o-transition: all 0.4s ease;
             transition: all 0.4s ease;
 }
-header.active {background: rgba(255,255,255,0); color:#000 }
-
 .menu {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.menu::before,
-.menu::after {
-    content: "";
-    display: table;
-}
-
-.menu::after {
-    clear: both;
-}
 header .menu a.menu-name, header .menu .menu-sections ul li a  {  color: #fff;}
 header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  color: #000;}
 .menu a.menu-name {
-    float: left;
     font-family: 'Karla', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin: 70px 0 0 0;
-    border-bottom: 3px solid transparent;
 }
 
-.menu .menu-sections {
-    float: right;
-    margin-top: 55px;
+.menu .menu-sections ul {
+    display: flex;
 }
-
-.menu .menu-sections ul li {
-    float: left;
-}
-
 .menu .menu-sections ul li a {
     display: inline-block;
     font-family: 'Karla', sans-serif;
@@ -189,13 +177,6 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0 45px;
-    padding: 25px 0 18px 0;
-    border-bottom: 3px solid transparent;
-
-    -webkit-transition: border-color 0.4s ease;
-       -moz-transition: border-color 0.4s ease;
-         -o-transition: border-color 0.4s ease;
-            transition: border-color 0.4s ease;
 }
 
 .menu .menu-sections ul li a:last-child {
@@ -314,8 +295,8 @@ p {
 }
 
 section {
-  padding-top: 125px;
-  padding-bottom: 125px;
+  padding-top: 140px;
+  padding-bottom: 130px;
   padding-left: 4vw;
   padding-right: 4vw;
   overflow-x: hidden;
@@ -345,7 +326,7 @@ section {
   color: #fff;
   position: fixed;
   z-index: 1;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 .fade-in {
     opacity: 1;
@@ -578,6 +559,11 @@ section {
    ========================================================================== */
 #about, #skills, #contact, #flow {position: relative; z-index: 20;}
 
+#skills {
+    padding-top: 50px;
+    width: 100%
+}
+
 #about h2 {
     margin-bottom: 30px;
 }
@@ -590,7 +576,7 @@ section {
 .img-circle {
     border-radius: 50%;
     float: right;
-    width:30%;
+    width: 20%;
 }
 
 @media (max-width: 1280px) {
@@ -1057,7 +1043,7 @@ figcaption.visually-showed {
 .email-color,
 .twitter-color,
 .instagram-color,
-.dribbble-color {
+.github-color {
     -webkit-transition: color 0.4s ease;
        -moz-transition: color 0.4s ease;
          -o-transition: color 0.4s ease;
@@ -1066,8 +1052,6 @@ figcaption.visually-showed {
 
 #contact a.email:hover { color: #db4437; }
 #contact a.twitter:hover { color: #55acee; }
-#contact a.instagram:hover { color: #9b6954; }
-#contact a.dribbble:hover { color: #ea4c89; }
 #contact a.github:hover { color: #000; }
 #contact a.linkedin:hover { color: #0077B5; }
 
