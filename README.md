@@ -2,10 +2,10 @@
 
 # :rocket: axelvf.com.ar
 
-* My personal site is hosted through [GitHub Pages](https://pages.github.com).
-* DDos protection, DNS, routing and cache are configurated in [CloudFlare](https://www.cloudflare.com).
-* The SSL certificate is issued by [COMODO](https://www.comodo.com/) (CloudFlare service).
-* **All services used are 100% free.**
+* :octocat:: My personal site is hosted through [GitHub Pages](https://pages.github.com).
+* :cloud:: DDos protection, DNS, routing and cache are configurated in [CloudFlare](https://www.cloudflare.com).
+* :closed_lock_with_key:: The SSL certificate is issued by [COMODO](https://www.comodo.com/) (CloudFlare service).
+* :moneybag:: **All services used are 100% free.**
 
 ## :space_invader: About me
 
