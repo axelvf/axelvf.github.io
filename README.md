@@ -12,7 +12,8 @@
 My name is Axel Vasquez, live in Buenos Aires, Argentina. I'm an information security & technologies architect with +9 years of experience in research, project management & development.
 
 * [linkedin/axelvasquez](https://linkedin.com/in/axelvasquez)
-* [twitter/axelvf](https://twitter.com/axelvf)
+* [![Twitter Follow](https://img.shields.io/twitter/follow/axelvf.svg?style=social)](https://twitter.com/axelvf)
+
 
 ## :blue_heart: Contributing
 
