@@ -1073,7 +1073,8 @@ figcaption.visually-showed {
    ========================================================================== */
 
 #footer {
-    background: #f4f4f4;
+    background: #000;
+    color: #fff;
     padding: 40px 0;
     text-align: center;
 }
@@ -1090,7 +1091,7 @@ figcaption.visually-showed {
 }
 
 #footer a:hover {
-    color: #3498db;
+    color: #fff;
 }
 
 .credits {
