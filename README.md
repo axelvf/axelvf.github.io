@@ -1,6 +1,6 @@
-[![SSL Rating](https://sslbadge.org/?domain=axelvf.com.ar)](https://www.ssllabs.com/ssltest/analyze.html?d=axelvf.com.ar) [![CloudFlare](https://www.cloudflare.com/media/images/web-badges/cf-web-badges-f-1.png)](https://cloudflare.com) 
+[![SSL Rating](https://sslbadge.org/?domain=axelvf.com)](https://www.ssllabs.com/ssltest/analyze.html?d=axelvf.com) [![CloudFlare](https://www.cloudflare.com/media/images/web-badges/cf-web-badges-f-1.png)](https://cloudflare.com) 
 
-# :rocket: axelvf.com.ar
+# :rocket: axelvf.com
 
 * :octocat:: My personal site is hosted through [GitHub Pages](https://pages.github.com).
 * :cloud:: DDos protection, DNS, routing and cache are configurated in [CloudFlare](https://www.cloudflare.com).
@@ -24,7 +24,7 @@ Pull requests and stars are always welcome. For bugs, questions and feature requ
 
 ## :black_nib: License
 
-Copyright © 2017 [Axel Vasquez](https://github.com/axelvf)
+Copyright © 2019 [Axel Vasquez](https://github.com/axelvf)
 Licensed under the MIT license.
 
 ***
