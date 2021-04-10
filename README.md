@@ -1,4 +1,4 @@
-[![SSL Rating](https://sslbadge.org/?domain=axelvf.com)](https://www.ssllabs.com/ssltest/analyze.html?d=axelvf.com) [![CloudFlare](https://www.cloudflare.com/media/images/web-badges/cf-web-badges-f-1.png)](https://cloudflare.com) 
+[![CloudFlare](https://www.cloudflare.com/media/images/web-badges/cf-web-badges-f-1.png)](https://cloudflare.com) 
 
 # :rocket: axelvf.com
 
@@ -9,7 +9,7 @@
 
 ## :space_invader: About me
 
-My name is Axel Vasquez, live in Buenos Aires, Argentina. I'm an information security & technologies architect with +9 years of experience in research, project management & development.
+My name is Axel Vasquez, live in Buenos Aires, Argentina. I'm an information security & technologies architect with +13 years of experience in research, project management & development.
 
 * [linkedin/axelvasquez](https://linkedin.com/in/axelvasquez)
 * [![Twitter Follow](https://img.shields.io/twitter/follow/axelvf.svg?style=social)](https://twitter.com/axelvf)
