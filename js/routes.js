@@ -1,6 +1,8 @@
 var geturl = String.prototype.toLowerCase.apply(window.location.href);
 if (geturl.indexOf('wp-admin') !== -1) {
     document.write("This is not a Wordpress site :)");
+} else if ((geturl.indexOf('admin') || geturl.indexOf('administrator')) !== -1) {
+    document.write("Admin panel not exists :)");
 } else if (geturl.indexOf('linkedin') !== -1) {
     window.location.href = ('https://www.linkedin.com/in/axelvasquez');
 } else if (geturl.indexOf('twitter') !== -1) {
