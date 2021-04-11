@@ -586,23 +586,32 @@ section {
 }
 
 @media (max-width: 779px) {
-    .about-content, .img-circle {
+    .about-content {
         width: 100%;
         display: block;
         float: none;
         margin-bottom: 50px;
     }
+    .img-circle {
+        display: none;
+    }
 }
 
 @media (max-width: 459px) {
-    .about-content, .img-circle {
+    .about-content {
         width: 100%;
+    }
+    .img-circle {
+        display: none;
     }
 }
 
 @media (max-width: 319px) {
-    .about-content, .img-circle {
+    .about-content {
         width: 100%;
+    }
+    .img-circle {
+        display: none;
     }
 }
 /* ==========================================================================
